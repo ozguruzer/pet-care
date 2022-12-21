@@ -276,31 +276,21 @@
 
 }
 
-.img-relative {
-  background: url(assets/img/Screenshot-2021-12-07-at-16-42-41-Home-03-–-Coco.png);
-  background-position: right;
-  background-repeat: no-repeat;
-  height: 80vh;
-  background-size: contain;
+.get-in-touch {
+  background-image: url(assets/img/down-dogs.png) no-repeat right right;
+  background-size: 100% 100%;
 }
 
 
 .flex-touch {}
 
 
-body {
-  background: #fcfcfc;
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  color: #000;
-  margin: 0;
-  padding: 0;
-}
 
 .swiper {
   width: 100%;
   height: 90%;
   border-radius: 30px;
-  width: 100vh;
+  width: 70vh;
 
 }
 
@@ -314,7 +304,7 @@ body {
   -ms-flex-pack: left;
   -webkit-justify-content: left;
   justify-content: left;
-  -webkit-box-align: left ;
+  -webkit-box-align: left;
   -ms-flex-align: left;
   -webkit-align-items: left;
   align-items: left;
@@ -325,54 +315,66 @@ body {
   object-fit: cover;
 }
 
-.swiper-text-title{
+.swiper-text-title {
   font-size: 20px;
   font-family: 'pacifico';
   color: #FF4880;
 }
 
 
-.swiper-text-content{
+.swiper-text-content {
   font-size: 14px;
 
 }
 
-.swiper-theme-color{
+.swiper-theme-color {
   color: #FF4880 !important;
 }
 
-.swiper > .swiper-pagination:active{
+.swiper>.swiper-pagination:active {
   color: #FF4880;
 }
 
-.swiper-pagination:active{
-color: #FF4880;
+.swiper-pagination:active {
+  color: #FF4880;
 }
 
-.swiper-pagination-bullet{
+.swiper-pagination-bullet {
   color: #FF4880 !important;
 }
 
-.swiper
-
-:root .swiper{
+.swiper:root .swiper {
   --swiper-theme-color: purple !important;
 }
 
-.bg-footer{
-  background: url(/assets/img/bg-footer.png);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: contain;
-  width:100%;
-  height:100vh;
-  margin: auto;
-  }
+. {
+  padding: 10px;
+  background: url(/assets/img/footer-bg.jpg) no-repeat center center;
+  background-size: 100% 100%  
+
+}
   
-  
-  
-  
-@media only screen and (max-width: 600px) {
+
+.bg-footer {
+  padding: 70px;
+  background: url(/assets/img/footer-bg.jpg) no-repeat center center;
+  background-size: 100% 100%
+
+}
+
+.footer-social ul li{
+  list-style: none;
+}
+
+.buttons-footer{
+  border-radius: 10px;
+}
+
+.footer-text-padding{
+  padding: 13px;
+}
+
+@media only screen and (max-width: 768px) {
   .card-group {
     flex-wrap: wrap;
   }
@@ -421,12 +423,15 @@ color: #FF4880;
   }
 
   .swiper {
-    width: 50vh;
+    width: 40vh;
+    margin: auto;
   }
 
 }
 
-@media only screen and (min-width: 1000px) {
+
+
+@media only screen and (max-width: 990px) {
   .card-group {
     flex-wrap: wrap;
   }
@@ -437,5 +442,59 @@ color: #FF4880;
 
   .touch-img {
     display: none;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: column !important;
+  }
+
+  .card-group-mobile {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    flex-direction: column !important;
+  }
+
+  .card-border-right {
+    border-right: 1px solid black;
+    border-radius: 30px !important;
+  }
+
+  .card-border {
+    border-left: 1px solid black !important;
+    border-radius: 30px !important;
+  }
+
+  .card-border-left {
+    border: 1px solid black;
+
+  }
+
+  .card-mid {
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 992px) {
+  .footer {
+    background-size: cover;
+    padding: 50px 0 0 0
+margin:none;
+padding: none;
+  }
+  
+  .about-text-mobile{
+    padding-right: 99px;
+  }
+.about-text{
+  flex-wrap: nowrap !important;
+}
+
+.buttons{
+display: flex;
+}
+
+  .buttons-footer{
+    margin-top: 20px;
   }
 }
