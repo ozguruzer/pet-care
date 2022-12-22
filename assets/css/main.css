@@ -1,18 +1,18 @@
 @font-face {
   font-family: pacifico;
-  src: url(assets/font/Pacifico-Regular.ttf);
+  src: url(../font/Pacifico-Regular.ttf);
   font-weight: regular;
 }
 
 @font-face {
   font-family: poppins-bold;
-  src: url(/assets/font/Poppins-Bold.ttf);
+  src: url(../font/Poppins-Bold.ttf);
   font-weight: bold;
 }
 
 @font-face {
   font-family: pacifico;
-  src: url(assets/font/Pacifico-Regular.ttf);
+  src: url(../font/Pacifico-Regular.ttf);
   font-weight: regular;
 }
 
@@ -78,7 +78,7 @@
 }
 
 .about-bg {
-  background-image: url(/assets/img/middle-bg.png);
+  background-image: url(../img/middle-bg.png);
   background-repeat: no-repeat;
   background-size: 50%;
   background-position: left;
@@ -92,7 +92,9 @@
   margin-top: 330px;
   margin-left: 156px;
 }
-
+section.about-us {
+  position:relative;
+}
 .about-us-title-1 {
   font-family: 'pacifico';
   font-size: 26px;
@@ -113,6 +115,7 @@
 .about-box-h {
   font-family: 'poppins-bold';
   font-size: 16px;
+  margin: 0;
 }
 
 .padding-box {
@@ -218,7 +221,7 @@
 }
 
 .card-text-p::before {
-  background-image: url(/assets/img/checkmark-outline.png);
+  background-image: url(../img/checkmark-outline.png);
   background-position: center;
   background-repeat: no-repeat center center;
   background-size: cover;
@@ -277,8 +280,12 @@
 }
 
 .get-in-touch {
-  background-image: url(assets/img/down-dogs.png) no-repeat right right;
+  background-image: url(../img/down-dogs.png) no-repeat right right;
   background-size: 100% 100%;
+}
+
+.footer-padding {
+  padding-top: 65px;
 }
 
 
@@ -349,7 +356,7 @@
 
 . {
   padding: 10px;
-  background: url(/assets/img/footer-bg.jpg) no-repeat center center;
+  background: url(../img/footer-bg.jpg) no-repeat center center;
   background-size: 100% 100%  
 
 }
@@ -357,7 +364,7 @@
 
 .bg-footer {
   padding: 70px;
-  background: url(/assets/img/footer-bg.jpg) no-repeat center center;
+  background: url(../img/footer-bg.jpg) no-repeat center center;
   background-size: 100% 100%
 
 }
@@ -372,6 +379,32 @@
 
 .footer-text-padding{
   padding: 13px;
+}
+.abs-bg {
+  position: absolute;
+  max-width: 50%;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+}
+.max-width-85 {
+  max-width: 85%;
+  margin-bottom: 15px;
+}
+
+@media only screen and (max-width: 992px) {
+  .abs-bg {
+    position: static;
+    width: 100%;
+    max-width: 100%;
+  }
+  .max-width-85 {
+    margin-bottom: 0;
+  }
+  .max-width-85 .about-box-1 {
+    margin-bottom: 15px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -401,6 +434,10 @@
     display: flex;
     flex-direction: column;
     text-align: center;
+    width: 100%;
+  }
+
+  .buttons a {
     width: 50%;
   }
 
@@ -478,9 +515,9 @@
 @media (max-width: 992px) {
   .footer {
     background-size: cover;
-    padding: 50px 0 0 0
-margin:none;
-padding: none;
+    padding: 50px 0;
+    margin:none;
+    padding: none;
   }
   
   .about-text-mobile{
