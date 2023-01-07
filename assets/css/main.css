@@ -410,6 +410,26 @@ section.get-in-touch {
   margin: auto;
 }
 
+@media only screen and (max-width: 1900px) {
+
+  .tch-bg{
+    padding-top: 140px;
+  }
+}
+@media only screen and (max-width: 1600px) {
+
+  .tch-bg{
+    padding-top: 100px;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+
+  .tch-bg{
+    padding-top: 250px;
+  }
+}
+
 @media only screen and (max-width: 992px) {
   .abs-bg {
     position: static;
@@ -491,8 +511,6 @@ section.get-in-touch {
   }
 
 }
-
-
 
 @media only screen and (max-width: 990px) {
   .card-group {
