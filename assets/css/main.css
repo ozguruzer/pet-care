@@ -95,6 +95,10 @@
 section.about-us {
   position:relative;
 }
+
+section.get-in-touch {
+  position:relative;
+}
 .about-us-title-1 {
   font-family: 'pacifico';
   font-size: 26px;
@@ -393,6 +397,17 @@ section.about-us {
   margin-bottom: 15px;
 }
 
+
+.tch-bg {
+  position: absolute;
+  max-width: 100%;
+  width: 45%;
+  right: 0;
+  bottom: 0.5;
+  top: 0;
+  margin: auto;
+}
+
 @media only screen and (max-width: 992px) {
   .abs-bg {
     position: static;
@@ -405,6 +420,15 @@ section.about-us {
   .max-width-85 .about-box-1 {
     margin-bottom: 15px;
   }
+
+  .tch-bg{
+    position: static;
+    width: 100%;
+    max-width: 100%;
+    right: 0;
+
+  }
+ 
 }
 
 @media only screen and (max-width: 768px) {
@@ -477,9 +501,7 @@ section.about-us {
     border-right: 30px;
   }
 
-  .touch-img {
-    display: none;
-  }
+
 
   .cards {
     display: flex;
