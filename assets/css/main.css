@@ -293,7 +293,9 @@ section.get-in-touch {
 }
 
 
-.flex-touch {}
+.flex-touch {
+  padding-top: 170px;
+}
 
 
 
