@@ -24,7 +24,10 @@
 
 
 
-
+ 
+body{
+  background-color: #fcfcfc;
+}
 
 .card-height {
   min-height: 550px !important;
@@ -49,7 +52,7 @@
 .font-hero-content-text {
   font-family: 'poppins-bold';
   font-size: 50px;
-}
+}<
 
 .hero-btn-bg-left {
   background-color: #FF4880;
@@ -299,14 +302,12 @@ section.get-in-touch {
 
 
 
-.swiper {
-  width: 100%;
-  height: 90%;
-  border-radius: 30px;
-  width: 70vh;
-
+.swiper-wrapper {
+  padding: 0 0px 80px 0px;
 }
-
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: 0;
+}
 .swiper-slide {
   /* Center slide text vertically */
   display: -webkit-box;
@@ -340,24 +341,44 @@ section.get-in-touch {
 
 }
 
-.swiper-theme-color {
-  color: #FF4880 !important;
-}
-
-.swiper>.swiper-pagination:active {
-  color: #FF4880;
-}
-
-.swiper-pagination:active {
-  color: #FF4880;
+.footer-pt{
+  margin-top: 250px !important;
 }
 
 .swiper-pagination-bullet {
-  color: #FF4880 !important;
+  background-color: #FF4880 !important;
+  opacity: 0.5;
+  width: 20px;
+  height: 20px;
+  transform: scale(.5);
 }
 
-.swiper:root .swiper {
-  --swiper-theme-color: purple !important;
+.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-main {
+  opacity: 1;
+  transform: scale(1);  
+}
+
+.swiper-shadow .swiper-slide{
+  border-radius: 10px;
+  box-shadow: rgba(149, 157, 165, 0.1) 0px 8px 24px;
+  background-color: #fff;
+}
+
+.box-bg {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0px;
+    height: 75%;
+    width: 90%;
+    background-color: #848484;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    opacity: 0.1;
+    box-shadow: rgba(255, 0, 0, 0.1) 0px 8px 24px;
 }
 
 . {
